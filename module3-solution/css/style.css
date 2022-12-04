@@ -1,0 +1,107 @@
+/* Attention: I'm using Bootstrap v5.2.3 in this solution, which is a lot newer than the version used by the instructor (v3.3.6).
+Because of this, please consider the newer col breakpoints: 
+    XS - 576px;
+    SM - 768px;
+    MD - 992px;
+*/
+
+@media (min-width: 576px){
+    button.navbar-toggler {
+        display: none;
+    }
+    #navbarContent {
+        display: none !important;
+    }
+}
+
+@media (max-width: 576px){
+    .navbar-brand {
+        font-size: 10vw;
+    }
+}
+
+/* MAIN STYLES */
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #FCFCFC;
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    margin-top: 15px;
+    font-size: 1.75em;
+}
+
+/* NAVBAR STYLES */
+.navbar {
+    background: rgb(76,119,144);
+    background: linear-gradient(93deg, rgba(76,119,144,1) 0%, rgba(115,145,162,1) 100%);
+}
+
+.navbar-brand {
+    margin-left: 5%;
+    color: #FFF !important;
+    font-size: 3em;
+    font-family: cursive;
+}
+
+.navbar-toggler {
+    border: 2px solid rgb(44, 44, 44);
+    font-weight: bold;
+}
+.navbar-toggler-icon {
+    color: rgb(44, 44, 44);
+}
+.navbar .nav-item {
+    background-color: #2f4a5a;
+    border: 1px solid black;
+}
+.navbar .nav-item .nav-link {
+    color: #FCFCFC;
+    font-weight: 100;
+}
+#navbarContent {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    width: 100%;
+}
+
+/* SECTION STYLES */
+#section1, #section2, #section3 {
+    padding: 10px;
+}
+#section1 p, #section2 p, #section3 p {
+    margin: 3%;
+}
+.sectionContainer {
+    margin: 0.5em;
+    border: 1px solid black;
+    background-color: #BBB;
+    overflow: hidden;
+    height: 700px;
+}
+.sectionContainer h3 {
+    font-weight: bold;
+    font-size: 1.25em !important;
+    padding: 0.15em;
+    position: relative;
+    margin-top: 0.7%;
+    color: black;
+}
+.sectionContainer p {
+    text-align: justify;
+    color: black;
+}
